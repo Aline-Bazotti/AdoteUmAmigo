@@ -10,33 +10,18 @@
     <link rel="stylesheet" href="./stylee.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="./stylebarra.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css'>
+    <link rel="stylesheet" href="./stylelogin.css">
 </head>
 
 <body class="landing is-preload">
     <div id="page-wrapper">
+
         <!-- Header -->
         <div class="modal">
+
             <div class="modal-container">
-                <div class="modal-left">
-                    <h1 class="modal-title">Welcome!</h1>
-                    <p class="modal-desc">Fanny pack hexagon food truck, street art waistcoat kitsch.</p>
-                    <div class="input-block">
-                        <label for="email" class="input-label">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email">
-                    </div>
-                    <div class="input-block">
-                        <label for="password" class="input-label">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Password">
-                    </div>
-                    <div class="modal-buttons">
-                        <a href="" class="">Forgot your password?</a>
-                        <button class="input-button">Login</button>
-                    </div>
-                    <p class="sign-up">Don't have an account? <a href="#">Sign up now</a></p>
-                </div>
-                <div class="modal-right">
-                    <img src="file:///C:/Users/patri/Desktop/cachorro-gato-pets-bichos-estimacao_2.jpg" alt="">
-                </div>
+
                 <button class="icon-button close-button">
                     <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50">
                         <path
@@ -44,27 +29,74 @@
                         </path>
                     </svg>
                 </button>
+                <div class="containerlogin" id="container">
+                    <div class="formlogin-containerlogin signlogin-uplogin-containerlogin">
+                        <formlogin action="#">
+                            <h1login>Criar Conta</h1login>
+                            <inputlogin type="text" placeholder="Nome" />
+                            <inputlogin type="email" placeholder="Email" />
+                            <inputlogin type="telefone" placeholder="Telefone" />
+                            <inputlogin type="endereco" placeholder="Endereço" />
+                            <inputlogin type="login" placeholder="Login" />
+                            <inputlogin type="senha" placeholder="Senha" />
+                            <buttonlogin>Inscrever-se</buttonlogin>
+                        </formlogin>
+                    </div>
+                </div>
+                <div class="formlogin-containerlogin signlogin-inlogin-containerlogin">
+                    <formlogin action="#">
+                        <h1login>Login</h1login>
+                        <div class="sociallogin-containerlogin">
+                            <alogin href="#" class="sociallogin"><i class="fab fa-facebook-f"></i></alogin>
+                            <alogin href="#" class="sociallogin"><i class="fab fa-google-plus-g"></i></alogin>
+                            <alogin href="#" class="sociallogin"><i class="fab fa-linkedin-in"></i></alogin>
+                        </div>
+                        <spanlogin>ou use sua conta</spanlogin>
+                        <inputlogin type="email" placeholder="Email" />
+                        <inputlogin type="password" placeholder="Senha" />
+                        <alogin href="#">Esqueceu sua senha?</alogin>
+                        <buttonlogin>Entrar</buttonlogin>
+                    </formlogin>
+                </div>
+                <div class="overlaylogin-containerlogin">
+                    <div class="overlaylogin">
+                        <div class="overlaylogin-panellogin overlaylogin-leftlogin">
+                            <h1login>Bem-vindo!</h1login>
+                            <plogin>Para se manter conectado, faça o login com suas informações pessoais</plogin>
+                            <buttonlogin class="ghostlogin" id="signIn">Entrar</buttonlogin>
+                        </div>
+                        <div class="overlaylogin-panellogin overlaylogin-rightlogin">
+                            <h1login>Olá, Amigo!</h1login>
+                            <plogin>Digite seus dados pessoais e comece a jornada com o Adote un Amigo!</plogin>
+                            <buttonlogin class="ghostlogin" id="signUp">Criar conta</buttonlogin>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <header id="header" class="alt">
-                <nav id="nav">
-                    <ul>
-                        <li>
-                            <a href="index.html">Adotar/Apadrinhar</a>
-                        </li>
-                        <li>
-                            <a href="..\src\adotados.html">Animais adotados</a>
-                        </li>
-                        <li>
-                            <a href="index.html">Donativos</a>
-                        </li>
-                        <li>
-                            <button class="modal-button" href="..\src\login.html">Entrar</button>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-
         </div>
+
+    </div>
+
+    <header id="header" class="alt">
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="index.html">Adotar/Apadrinhar</a>
+                </li>
+                <li>
+                    <a href="..\src\adotados.html">Animais adotados</a>
+                </li>
+                <li>
+                    <a href="index.html">Donativos</a>
+                </li>
+                <li>
+                    <button class="modal-button">Entrar</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    </div>
     </div>
 
     <!-- Banner -->
@@ -687,3 +719,4 @@
             </script>
             <script src="./scriptt.js"></script>
             <script src="./scriptbarra.js"></script>
+            <script src="./scriptlogin.js"></script>

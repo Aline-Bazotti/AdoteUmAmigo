@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-* {
+*login {
     box-sizing: border-box;
 }
 
-body {
+bodylogin {
     background: #f6f5f7;
     display: flex;
     justify-content: center;
@@ -15,16 +15,16 @@ body {
     margin: -20px 0 50px;
 }
 
-h1 {
+h1login {
     font-weight: bold;
     margin: 0;
 }
 
-h2 {
+h2login {
     text-align: center;
 }
 
-p {
+plogin {
     font-size: 14px;
     font-weight: 100;
     line-height: 20px;
@@ -32,18 +32,18 @@ p {
     margin: 20px 0 30px;
 }
 
-span {
+spanlogin {
     font-size: 12px;
 }
 
-a {
+alogin {
     color: #333;
     font-size: 14px;
     text-decoration: none;
     margin: 15px 0;
 }
 
-button {
+buttonlogin {
     border-radius: 20px;
     border: 1px solid rgb(243, 163, 14);
     color: #FFFFFF;
@@ -56,20 +56,20 @@ button {
     background-color: #dc8510;
 }
 
-button:active {
+buttonlogin:activelogin {
     transform: scale(0.95);
 }
 
-button:focus {
+buttonlogin:focuslogin {
     outline: none;
 }
 
-button.ghost {
+buttonlogin.ghostlogin {
     background-color: transparent;
     border-color: #FFFFFF;
 }
 
-form {
+formlogin {
     background-color: #FFFFFF;
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@ form {
     text-align: center;
 }
 
-input {
+inputlogin {
     background-color: #eee;
     border: none;
     padding: 12px 15px;
@@ -88,7 +88,7 @@ input {
     width: 100%;
 }
 
-.container {
+.containerlogin {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
@@ -100,31 +100,31 @@ input {
     min-height: 480px;
 }
 
-.form-container {
+.formlogin-containerlogin {
     position: absolute;
     top: 0;
     height: 100%;
     transition: all 0.6s ease-in-out;
 }
 
-.sign-in-container {
+.signlogin-inlogin-containerlogin {
     left: 0;
     width: 50%;
     z-index: 2;
 }
 
-.container.right-panel-active .sign-in-container {
+.containerlogin.rightlogin-panellogin-activelogin .signlogin-inlogin-containerlogin {
     transform: translateX(100%);
 }
 
-.sign-up-container {
+.signlogin-uplogin-containeloginr {
     left: 0;
     width: 50%;
     opacity: 0;
     z-index: 1;
 }
 
-.container.right-panel-active .sign-up-container {
+.containerlogin.rightlogin-panellogin-activelogin .signlogin-uplogin-containerlogin {
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
@@ -145,7 +145,7 @@ input {
     }
 }
 
-.overlay-container {
+.overlaylogin-containerlogin {
     position: absolute;
     top: 0;
     left: 50%;
@@ -156,11 +156,11 @@ input {
     z-index: 100;
 }
 
-.container.right-panel-active .overlay-container {
+.containerlogin.rightlogin-panellogin-activelogin .overlaylogin-containerlogin {
     transform: translateX(-100%);
 }
 
-.overlay {
+.overlaylogin {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -173,11 +173,11 @@ input {
     transition: transform 0.6s ease-in-out;
 }
 
-.container.right-panel-active .overlay {
+.containerlogin.rightlogin-panellogin-activelogin .overlaylogin {
     transform: translateX(50%);
 }
 
-.overlay-panel {
+.overlaylogin-panellogin {
     position: absolute;
     display: flex;
     align-items: center;
@@ -192,32 +192,32 @@ input {
     transition: transform 0.6s ease-in-out;
 }
 
-.overlay-left {
+.overlaylogin-leftlogin {
     transform: translateX(-20%);
     background-position: center top;
     background-image: url('../resources/CriarConta.jpg');
 }
 
-.container.right-panel-active .overlay-left {
+.containerlogin.rightlogin-panellogin-activelogin .overlaylogin-leftlogin {
     transform: translateX(0);
 }
 
-.overlay-right {
+.overlaylogin-rightlogin {
     right: 0;
     transform: translateX(0);
     background-position: center top;
     background-image: url('../resources/Login.jpg');
 }
 
-.container.right-panel-active .overlay-right {
+.containerlogin.rightlogin-panellogin-activelogin .overlaylogin-rightlogin {
     transform: translateX(20%);
 }
 
-.social-container {
+.sociallogin-containerlogin {
     margin: 20px 0;
 }
 
-.social-container a {
+.sociallogin-containerlogin a {
     border: 1px solid #DDDDDD;
     border-radius: 50%;
     display: inline-flex;
@@ -228,7 +228,7 @@ input {
     width: 40px;
 }
 
-footer {
+footerlogin {
     background-color: #222;
     color: #fff;
     font-size: 14px;
@@ -240,15 +240,15 @@ footer {
     z-index: 999;
 }
 
-footer p {
+footerlogin p {
     margin: 10px 0;
 }
 
-footer i {
+footerlogin i {
     color: red;
 }
 
-footer a {
+footerlogin a {
     color: #3c97bf;
     text-decoration: none;
 }
