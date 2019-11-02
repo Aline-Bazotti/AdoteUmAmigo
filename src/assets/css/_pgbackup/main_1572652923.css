@@ -2220,6 +2220,7 @@ input[type="password"],
 input[type="email"],
 select {
     height: 3em;
+    margin-bottom: -4px;
 }
 
 textarea {
@@ -2242,6 +2243,7 @@ input[type="radio"] {
 
 input[type="checkbox"] + label,
 input[type="radio"] + label {
+    text-decoration: none;
     color: #777;
     cursor: pointer;
     display: inline-block;

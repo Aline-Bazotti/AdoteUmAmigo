@@ -2254,6 +2254,7 @@ input[type="radio"] + label {
     bottom: -5px;
     margin-left: 1px;
     margin-top: 1px;
+    height: 16px;
 }
 
 input[type="checkbox"] + label:before,

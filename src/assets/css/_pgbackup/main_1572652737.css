@@ -2242,6 +2242,7 @@ input[type="radio"] {
 
 input[type="checkbox"] + label,
 input[type="radio"] + label {
+    text-decoration: none;
     color: #777;
     cursor: pointer;
     display: inline-block;
@@ -2250,10 +2251,8 @@ input[type="radio"] + label {
     padding-left: 2.55em;
     padding-right: 0.75em;
     position: relative;
-    left: -82px;
+    left: -81px;
     bottom: -5px;
-    margin-left: 1px;
-    margin-top: 1px;
 }
 
 input[type="checkbox"] + label:before,

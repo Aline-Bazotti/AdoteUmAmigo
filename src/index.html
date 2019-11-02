@@ -16,12 +16,9 @@
 
 <body class="landing is-preload">
     <div id="page-wrapper">
-
         <!-- Header -->
         <div class="modal">
-
             <div class="modal-container">
-
                 <button class="icon-button close-button">
                     <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50">
                         <path
@@ -30,31 +27,35 @@
                     </svg>
                 </button>
                 <div class="containerlogin" id="container">
-                    <div class="formlogin-containerlogin signlogin-uplogin-containerlogin">
+                    <div class="formlogin-containerlogin sign-up-containerlogin">
                         <formlogin action="#">
                             <h1login>Criar Conta</h1login>
-                            <inputlogin type="text" placeholder="Nome" />
-                            <inputlogin type="email" placeholder="Email" />
-                            <inputlogin type="telefone" placeholder="Telefone" />
-                            <inputlogin type="endereco" placeholder="Endereço" />
-                            <inputlogin type="login" placeholder="Login" />
-                            <inputlogin type="senha" placeholder="Senha" />
+                            <input type="text" placeholder="Nome" />
+                            <p></p>
+                            <input type="email" placeholder="Email" />
+                            <p></p>
+                            <input type="text" placeholder="Endereço" />
+                            <p></p>
+                            <input type="text" placeholder="Telefone" />
+                            <p></p>
+                            <input type="text" placeholder="Login" />
+                            <p></p>
+                            <input type="text" placeholder="Senha" />
+                            <p></p>
+                            <input type="checkbox" id="scales" name="scales" checked>
+                            <label for="scales">Ong's</label>
+                            <p></p>
                             <buttonlogin>Inscrever-se</buttonlogin>
                         </formlogin>
                     </div>
                 </div>
-                <div class="formlogin-containerlogin signlogin-inlogin-containerlogin">
+                <div class="formlogin-containerlogin sign-in-containerlogin">
                     <formlogin action="#">
                         <h1login>Login</h1login>
-                        <div class="sociallogin-containerlogin">
-                            <alogin href="#" class="sociallogin"><i class="fab fa-facebook-f"></i></alogin>
-                            <alogin href="#" class="sociallogin"><i class="fab fa-google-plus-g"></i></alogin>
-                            <alogin href="#" class="sociallogin"><i class="fab fa-linkedin-in"></i></alogin>
-                        </div>
-                        <spanlogin>ou use sua conta</spanlogin>
-                        <inputlogin type="email" placeholder="Email" />
-                        <inputlogin type="password" placeholder="Senha" />
-                        <alogin href="#">Esqueceu sua senha?</alogin>
+                        <p></p> 
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Senha" />
+                        <a href="#">Esqueceu sua senha?</a>
                         <buttonlogin>Entrar</buttonlogin>
                     </formlogin>
                 </div>
@@ -62,21 +63,19 @@
                     <div class="overlaylogin">
                         <div class="overlaylogin-panellogin overlaylogin-leftlogin">
                             <h1login>Bem-vindo!</h1login>
-                            <plogin>Para se manter conectado, faça o login com suas informações pessoais</plogin>
-                            <buttonlogin class="ghostlogin" id="signIn">Entrar</buttonlogin>
+                            <p>Para se manter conectado, faça o login com suas informações pessoais</p>
+                            <buttonlogin class="ghost" id="signIn">Entrar</buttonlogin>
                         </div>
                         <div class="overlaylogin-panellogin overlaylogin-rightlogin">
                             <h1login>Olá, Amigo!</h1login>
-                            <plogin>Digite seus dados pessoais e comece a jornada com o Adote un Amigo!</plogin>
-                            <buttonlogin class="ghostlogin" id="signUp">Criar conta</buttonlogin>
+                            <p>Digite seus dados pessoais e comece a jornada com o Adote un Amigo!</p>
+                            <buttonlogin class="ghost" id="signUp">Criar conta</buttonlogin>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
-
     <header id="header" class="alt">
         <nav id="nav">
             <ul>
@@ -95,10 +94,7 @@
             </ul>
         </nav>
     </header>
-
     </div>
-    </div>
-
     <!-- Banner -->
     <section id="banner">
         <span style="font-size: 3.5em; font-weight: 300; letter-spacing: -0.035em;">Adote um Amigo</span>
@@ -649,74 +645,73 @@
                         </li>
                     </ul>
                 </section>
-            </div>
-            <div class="col-6 col-12-narrower">
-                <section class="box special">
-                    <span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
-                    <h3>Accumsan integer</h3>
-                    <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim
-                        rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-                    <ul class="actions special">
+                <div class="col-6 col-12-narrower">
+                    <section class="box special">
+                        <span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
+                        <h3>Accumsan integer</h3>
+                        <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim
+                            rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+                        <ul class="actions special">
+                            <li>
+                                <a href="#" class="button alt">Learn More</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <!-- CTA -->
+                <section id="cta">
+                    <h2>Sign up for beta access</h2>
+                    <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
+                    <form>
+                        <div class="row gtr-50 gtr-uniform">
+                            <div class="col-8 col-12-mobilep">
+                                <input type="email" name="email" id="email" placeholder="Email Address" />
+                            </div>
+                            <div class="col-4 col-12-mobilep">
+                                <input type="submit" value="Sign Up" class="fit" />
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <!-- Footer -->
+                <footer id="footer">
+                    <ul class="icons">
                         <li>
-                            <a href="#" class="button alt">Learn More</a>
+                            <a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon brands fa-github"><span class="label">Github</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a>
                         </li>
                     </ul>
-                </section>
-            </div>
-            <!-- CTA -->
-            <section id="cta">
-                <h2>Sign up for beta access</h2>
-                <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
-                <form>
-                    <div class="row gtr-50 gtr-uniform">
-                        <div class="col-8 col-12-mobilep">
-                            <input type="email" name="email" id="email" placeholder="Email Address" />
-                        </div>
-                        <div class="col-4 col-12-mobilep">
-                            <input type="submit" value="Sign Up" class="fit" />
-                        </div>
-                    </div>
-                </form>
-            </section>
-            <!-- Footer -->
-            <footer id="footer">
-                <ul class="icons">
-                    <li>
-                        <a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon brands fa-github"><span class="label">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a>
-                    </li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; Untitled. All rights reserved.</li>
-                    <li>Design:
-                        <a href="http://html5up.net">HTML5 UP</a>
-                    </li>
-                </ul>
-            </footer>
-            <!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.dropotron.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
-            </script>
-            <script src="./scriptt.js"></script>
-            <script src="./scriptbarra.js"></script>
-            <script src="./scriptlogin.js"></script>
+                    <ul class="copyright">
+                        <li>&copy; Untitled. All rights reserved.</li>
+                        <li>Design:
+                            <a href="http://html5up.net">HTML5 UP</a>
+                        </li>
+                    </ul>
+                </footer>
+                <!-- Scripts -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/jquery.dropotron.min.js"></script>
+                <script src="assets/js/jquery.scrollex.min.js"></script>
+                <script src="assets/js/browser.min.js"></script>
+                <script src="assets/js/breakpoints.min.js"></script>
+                <script src="assets/js/util.js"></script>
+                <script src="assets/js/main.js"></script>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+                </script>
+                <script src="./scriptt.js"></script>
+                <script src="./scriptbarra.js"></script>
+                <script src="./scriptlogin.js"></script>

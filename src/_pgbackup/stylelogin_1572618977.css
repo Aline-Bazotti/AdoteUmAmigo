@@ -18,14 +18,13 @@ bodylogin {
 h1login {
     font-weight: bold;
     margin: 0;
-    font-size: 38px;
 }
 
 h2login {
     text-align: center;
 }
 
-p {
+plogin {
     font-size: 14px;
     font-weight: 100;
     line-height: 20px;
@@ -37,7 +36,7 @@ spanlogin {
     font-size: 12px;
 }
 
-a {
+alogin {
     color: #333;
     font-size: 14px;
     text-decoration: none;
@@ -65,7 +64,7 @@ buttonlogin:focuslogin {
     outline: none;
 }
 
-buttonlogin.ghost {
+buttonlogin.ghostlogin {
     background-color: transparent;
     border-color: #FFFFFF;
 }
@@ -76,7 +75,7 @@ formlogin {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 50px 17px;
+    padding: 0 50px;
     height: 100%;
     text-align: center;
 }
@@ -109,17 +108,17 @@ inputlogin {
     transition: all 0.6s ease-in-out;
 }
 
-.sign-in-containerlogin {
+.signlogin-inlogin-containerlogin {
     left: 0;
     width: 50%;
     z-index: 2;
 }
 
-.containerlogin.rightlogin-panellogin-activelogin .sign-in-containerlogin {
+.containerlogin.rightlogin-panellogin-activelogin .signlogin-inlogin-containerlogin {
     transform: translateX(100%);
 }
 
-.sign-up-containerlogin {
+.signlogin-uplogin-containerlogin {
     left: 0;
     width: 50%;
     opacity: 0;
@@ -219,7 +218,7 @@ inputlogin {
     margin: 20px 0;
 }
 
-.sociallogin-containerlogin a {
+.sociallogin-containerlogin alogin {
     border: 1px solid #DDDDDD;
     border-radius: 50%;
     display: inline-flex;
@@ -242,7 +241,7 @@ footerlogin {
     z-index: 999;
 }
 
-footerlogin p {
+footerlogin plogin {
     margin: 10px 0;
 }
 
@@ -250,7 +249,7 @@ footerlogin ilogin {
     color: red;
 }
 
-footerlogin a {
+footerlogin alogin {
     color: #3c97bf;
     text-decoration: none;
 }
