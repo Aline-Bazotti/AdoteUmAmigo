@@ -66,9 +66,9 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="lost-&amp;-found.html">Achados &amp; Perdidos</a></li>
-                                    <li><a href="pet-services.html">Serviços</a></li>
-                                    <li><a href="news.html">Eventos</a></li>
+                                    <li><a href="<?= base_url() ?>Usuario/Cadastro">Cadastre-se</a></li>
+                                    <li><a href="pet-services.html">Login</a></li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -439,36 +439,12 @@
                 </div>
             </section>
 
-            <!-- RD Google Map-->
-            <section class="box-wrap">
-                <div class="box-wrap-map">
-                    <div class="rd-google-map rd-google-map__model" data-zoom="15" data-x="-53.5182498" data-y="-26.729009">
-                        <ul class="map_locations">
-                            <li data-y="-26.729009" data-x="-53.5182498">
-                                <p>Rua Sete de Setembro, 2455, Centro - São Miguel do Oeste/SC</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="box-wrap-content">
-                    <div class="shell">
-                        <div class="box-wrap-content-interactive">
-                            <div class="box-contacts">
-                                <h4>Endereço</h4>
-                                <address>
-                                    <p>Rua Sete de Setembro, 2455, Centro - São Miguel do Oeste/SC</p>
-                                </address>
-                                <h4>E-mail</h4><a class="link-gray" href="mailto:#">onggrupoamigobicho@gmail.com</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
             <section class="section-md last-section bg-white text-center" style="background-color: whitesmoke;">
                 <div class="shell">
                     <div class="range range-sm-center">
                         <div class="cell-sm-10 cell-md-10 cell-lg-6">
-                            <h4>Entre em contato</h4>
+                            <h4>CADASTRE-SE</h4>
                             <!-- RD Mailform-->
                             <form id="contato" class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="<?= base_url() ?>Contato/cadContato">
                                 <div class="range range-sm-bottom spacing-20">

@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+    <head>
+        <!-- Site Title-->
+        <title>Pet services</title>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <!-- Stylesheets-->
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,700,400italic%7CPoppins:300,400,500,700">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
+        <link href="<?= base_url() ?>assets/css/main.css" rel="stylesheet" type="text/css"/>
+        <!--[if lt IE 10]>
+<div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+<script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Page-->
+        <div class="page">
+            <div class="layout-panel-wrap">
+                <div class="layout-panel">
+                    <button class="layout-panel-toggle" data-custom-toggle=".layout-panel-wrap" data-custom-toggle-disable-on-blur="true"><span></span></button>
+                    <div class="layout-panel-content scroll-wrap">
+                        <div class="layout-panel-inner isotope-wrap">
+                            <div class="layout-panel-header"><a class="btn btn-block btn-blue-marguerite btn-effect-anis" href="#">Get template</a>
+                                <h4 class="layout-panel-title">Layouts</h4>
+                            </div>
+                            <!-- Isotope Filters-->
+                            <div class="isotope-filters">
+                                <ul class="inline-list-xxs">
+                                    <li><a class="active" data-isotope-filter="*" data-isotope-group="layouts" href="#">All</a></li>
+                                    <li><a data-isotope-filter="Headers" data-isotope-group="layouts" href="#">Headers</a></li>
+                                    <li><a data-isotope-filter="Sliders" data-isotope-group="layouts" href="#">Sliders</a></li>
+                                    <li><a data-isotope-filter="Contents" data-isotope-group="layouts" href="#">Contents</a></li>
+                                    <li><a data-isotope-filter="Footers" data-isotope-group="layouts" href="#">Footers</a></li>
+                                </ul>
+                                <!-- Isotope Content-->
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-loader">
+                <div class="brand-name"><img src="images/logo-default-176x45.png" alt="" width="176" height="45"/>
+                </div>
+                <div class="page-loader-body">
+                    <div class="cssload-jumping"><span></span><span></span><span></span><span></span><span></span></div>
+                </div>
+            </div>
+            <header class="page-header">
+                <!-- RD Navbar-->
+                <div class="rd-navbar-wrap">
+                    <nav class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-stick-up-clone="true" data-md-stick-up-offset="190px" data-lg-stick-up-offset="190px">
+                        <div class="rd-navbar-top-panel">
+                            <div class="rd-navbar-top-panel-toggle" data-rd-navbar-toggle=".rd-navbar-top-panel"><span></span></div>
+                            <div class="rd-navbar-top-panel-content">
+                                <ul class="inline-list-xxs">
+                                    <li><a class="icon icon-xxs icon-circle icon-gray-outline icon-effect-1 fa fa-instagram" href="#"></a></li>
+                                    <li><a class="icon icon-xxs icon-circle icon-gray-outline icon-effect-1 fa fa-facebook" href="#"></a></li>
+                                    <li><a class="icon icon-xxs icon-circle icon-gray-outline icon-effect-1 fa fa-twitter" href="#"></a></li>
+                                    <li><a class="icon icon-xxs icon-circle icon-gray-outline icon-effect-1 fa fa-google-plus" href="#"></a></li>
+                                </ul>
+                                <div class="object-inline"><span class="icon icon-sm icon-gray material-icons-phone"></span><a class="link link-md link-white" href="callto:#">+1 (409) 987–5874</a></div>
+                            </div>
+                        </div>
+                        <div class="rd-navbar-inner">
+                            <!-- RD Navbar Panel-->
+                            <div class="rd-navbar-panel">
+                                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <!-- RD Navbar Brand-->
+                                <div class="rd-navbar-brand"><a class="brand-name" href="index.html"><img src="images/logo-default-176x45.png" alt="" width="176" height="45"/></a></div>
+                            </div>
+                            <!-- RD Navbar Nav-->
+                            <div class="rd-navbar-nav-wrap">
+                                <ul class="rd-navbar-nav">
+                                    <li><a href="index.html">Home</a>
+                                    </li>
+                                    <li><a href="adopt-a-pet.html">Adote um pet</a>
+                                        <ul class="rd-navbar-dropdown tabs-nav">
+                                            <li><a href="<?= base_url() ?>Animais/gatos">Gatos</a>
+                                            </li>
+                                            <li><a href="<?= base_url() ?>Animais/cachorros">Cachorros</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about-us.html">Donativos</a>
+                                    </li>
+                                    <li><a href="<?= base_url() ?>Usuario/Cadastro">Cadastre-se</a></li>
+                                    <li><a href="pet-services.html">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- Breadcrumbs & Page title-->
+            <div class="page-title" style="padding: 50px 15px;">
+                <div class="page-title-text">Cadastro</div>
+                <ul class="breadcrumbs-custom">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Cadastro</li>
+                </ul>
+            </div>
+
+        
+            <section class="section-md last-section bg-white text-center" style="background-color: whitesmoke;">
+                <div class="shell">
+                    <div class="range range-sm-center">
+                        <div class="cell-sm-10 cell-md-10 cell-lg-8">
+                            <!-- RD Mailform-->
+                            <form id="cadastro" class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="<?= base_url() ?>Usuario/cadastrar">
+                                <div class="range range-sm-bottom spacing-20 cadastro">
+                                    <div class="cell-sm-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="contact-first-name" type="text" name="nome" id="nome" data-constraints="@Required">
+                                            <label class="form-label" for="contact-first-name">Nome completo</label>
+                                        </div>
+                                    </div>
+                                    <div class="cell-sm-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="contact-last-name" type="text" name="telefone" id="telefone" data-constraints="@Numeric @Required">
+                                            <label class="form-label" for="contact-last-name">Telefone</label>
+                                        </div>
+                                    </div>
+                                    <div class="cell-xs-12">
+                                        <div class="form-group">
+                                            <input class="form-control" id="contact-address" type="text" name="endereco" id="endereco" data-constraints="@Required">
+                                            <label class="form-label" for="contact-address">Endereço</label>
+                                        </div>
+                                    </div>
+                                    <div class="cell-xs-12">
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="1" id="ong" name="ong">
+                                          <label class="form-check-label" for="defaultCheck1">
+                                               &nbsp; SOU UMA ONG
+                                          </label>
+                                        </div>                                    
+                                    </div>
+                                    <div class="cell-sm-12">
+                                        <div class="form-group">
+                                            <input class="form-control" id="contact-email" type="email" name="email" id="email" data-constraints="@Email @Required">
+                                            <label class="form-label" for="contact-email">E-mail</label>
+                                        </div>
+                                    </div>
+                                    <div class="cell-sm-12">
+                                        <div class="form-group">
+                                            <input class="form-control" id="contact-senha" type="password" name="senha" id="senha" data-constraints="@Required">
+                                            <label class="form-label" for="contact-senha">Senha</label>
+                                        </div>
+                                    </div>
+                                    <div class="cell-sm-12">
+                                        <button class="btn btn-tan-hide btn-block" type="submit">Salvar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        
+
+            <!-- Page Footer-->
+            <section class="pre-footer-default text-center text-sm-left">
+                <div class="shell">
+                    <div class="range range-sm-center spacing-55">
+                        <div class="cell-sm-6 cell-md-4">
+                            <div class="brand-sm"><a href="index.html"><img src="images/logo-default-176x45.png" alt="" width="176" height="45"/></a></div>
+                            <p>As the leading animal welfare organization in the area, Animal Shelter is transforming the way people care about animals throughout the USA.</p>
+                            <div class="group-sm group-middle"><span class="big text-blue-marguerite">Social media</span>
+                                <ul class="inline-list-xxs">
+                                    <li><a class="icon icon-xxs icon-circle icon-trout-outline icon-effect-1 fa fa-instagram" href="#"></a></li>
+                                    <li><a class="icon icon-xxs icon-circle icon-trout-outline icon-effect-1 fa fa-facebook" href="#"></a></li>
+                                    <li><a class="icon icon-xxs icon-circle icon-trout-outline icon-effect-1 fa fa-twitter" href="#"></a></li>
+                                    <li><a class="icon icon-xxs icon-circle icon-trout-outline icon-effect-1 fa fa-google-plus" href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cell-sm-6 cell-md-4">
+                            <h5 class="pre-footer-header text-uppercase">Flickr feed</h5>
+                            <div class="row spacing-10 flickr" data-flickr-tags="tm-61279" data-photo-swipe-gallery="gallery">
+                                <div class="col-xs-4">
+                                    <div class="flickr-item" data-type="flickr-item"><a class="thumbnail-flickr" data-image_b="href" data-photo-swipe-item>
+                                            <figure><img src="images/_blank.png" data-image_m="src" data-title="alt" width="165" height="165" alt=""></figure>
+                                            <div class="thumbnail-overlay"></div></a></div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="flickr-item" data-type="flickr-item"><a class="thumbnail-flickr" data-image_b="href" data-photo-swipe-item>
+                                            <figure><img src="images/_blank.png" data-image_m="src" data-title="alt" width="165" height="165" alt=""></figure>
+                                            <div class="thumbnail-overlay"></div></a></div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="flickr-item" data-type="flickr-item"><a class="thumbnail-flickr" data-image_b="href" data-photo-swipe-item>
+                                            <figure><img src="images/_blank.png" data-image_m="src" data-title="alt" width="165" height="165" alt=""></figure>
+                                            <div class="thumbnail-overlay"></div></a></div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="flickr-item" data-type="flickr-item"><a class="thumbnail-flickr" data-image_b="href" data-photo-swipe-item>
+                                            <figure><img src="images/_blank.png" data-image_m="src" data-title="alt" width="165" height="165" alt=""></figure>
+                                            <div class="thumbnail-overlay"></div></a></div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="flickr-item" data-type="flickr-item"><a class="thumbnail-flickr" data-image_b="href" data-photo-swipe-item>
+                                            <figure><img src="images/_blank.png" data-image_m="src" data-title="alt" width="165" height="165" alt=""></figure>
+                                            <div class="thumbnail-overlay"></div></a></div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="flickr-item" data-type="flickr-item"><a class="thumbnail-flickr" data-image_b="href" data-photo-swipe-item>
+                                            <figure><img src="images/_blank.png" data-image_m="src" data-title="alt" width="165" height="165" alt=""></figure>
+                                            <div class="thumbnail-overlay"></div></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell-sm-9 cell-md-4 text-sm-center text-md-left">
+                            <h5 class="pre-footer-header text-uppercase">Newsletter</h5>
+                            <p>Enter your e-mail to get the latest news of Animal Shelter.</p>
+                            <!-- RD Mailform-->
+                            <form class="rd-mailform form-bordered form-centered" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                                <div class="form-group">
+                                    <input class="form-control" id="footer-subscribe-email" type="email" name="email" data-constraints="@Email @Required">
+                                    <label class="form-label" for="footer-subscribe-email">Your e-mail address</label>
+                                </div>
+                                <button class="btn btn-primary btn-block btn-offset-small" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="page-footer-default text-center">
+                <div class="shell">
+                    <div class="range spacing-30">
+                        <div class="cell-md-8 cell-lg-9 text-md-left">
+                            <ul class="list-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About us</a></li>
+                                <li><a href="adopt-a-pet.html">Adopt a Pet</a></li>
+                                <li><a href="lost-&amp;-found.html">Lost & Found</a></li>
+                                <li class="active"><a href="pet-services.html">Pet Services</a></li>
+                                <li><a href="news.html">News & Events</a></li>
+                            </ul>
+                        </div>
+                        <div class="cell-md-4 cell-lg-3 text-md-right">
+                            <p class="rights">Animal Shelter&nbsp;&copy;&nbsp;<span id="copyright-year"></span>.&nbsp;<br class="veil-sm"><a class="link-underline" href="privacy-policy.html">Privacy Policy</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- Global Mailform Output-->
+        <div class="snackbars" id="form-output-global"></div>
+        <!-- PhotoSwipe Gallery-->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__cent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Javascript-->
+        <script src="<?= base_url() ?>assets/js/core.min.js"></script>
+        <script src="<?= base_url() ?>assets/js/script.js"></script>
+
+
+    </body><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+</html>
