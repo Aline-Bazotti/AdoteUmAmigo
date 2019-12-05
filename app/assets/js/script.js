@@ -58,6 +58,40 @@ var userAgent = navigator.userAgent.toLowerCase(),
  */
 $document.ready(function () {
 
+  $("#especie").live('change', function () {
+        if ($(this).val()) {
+            $('#raca').hide();
+            $('.carregando').show();
+            $.ajax({
+                type: "POST",
+                timeout: 15000,
+                url: 'http://127.0.0.1/AdoteUmAmigo/app/Animais/get_raca_by_especie',
+                //url: 'http://192.168.2.92/GlukFrete/gluk/get_cidade_by_estado',
+                data: {
+                    idEspecie: $(this).val()
+                },
+                dataType: "json",
+                success: function (r) {
+                    var options = '<select name="racaselect" id="racaselect" class="span12 selectchosen" data-placeholder="Selecione a Raça"><option value=""></option>';
+                    $.each(r, function (i, j) {
+                        options += '<option value="' + j.id + '">' + j.nome + '</option>';
+                    });
+                    options += '</select>';
+                    $('.carregando').hide();
+                    $('#raca').html(options).show();
+
+                    $("#racaselect").chosen({
+                        allow_single_deselect: true,
+                        no_results_text: "Não encontrado!"
+                    }).live('change', function () {
+                        $(this).closest('form').validate().element($(this));
+                    });
+                    
+                }
+            });
+        }
+    });
+
   /**
    * getSwiperHeight
    * @description  calculate the height of swiper slider basing on data attr
@@ -937,7 +971,7 @@ $document.ready(function () {
 
       select.select2({
         theme: "bootstrap"
-      }).next().addClass(select.attr("class").match(/(input-sm)|(input-lg)|($)/i).toString().replace(new RegExp(",", 'g'), " "));
+      });
     }
   }
 

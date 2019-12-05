@@ -56,9 +56,8 @@
                                 <ul class="rd-navbar-nav">
                                     <li><a href="<?= base_url() ?>">Home</a>
                                     </li>
-                                    <li class="active"><a href="about-us.html">Sobre nós</a>
-                                    </li>
-                                    <li><a href="adopt-a-pet.html">Adote um pet</a>
+                                    
+                                    <li><a href="">Adote um pet</a>
                                         <ul class="rd-navbar-dropdown tabs-nav">
                                             <li><a href="<?= base_url() ?>Animais/gatos">Gatos</a>
                                             </li>
@@ -66,11 +65,10 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="lost-&amp;-found.html">Achados &amp; Perdidos</a>
+                                    <li class="active"><a href="<?= base_url() ?>Donativos">Donativos</a>
                                     </li>
-                                    <li><a href="pet-services.html">Serviços</a>
-                                    </li>
-                                    <li><a href="news.html">Eventos</a></li>
+                                    <li><a href="<?= base_url() ?>Usuario/Cadastro">Cadastre-se</a></li>
+                                    <li><a href="<?= base_url() ?>Usuario/Login">Login</a></li>
                                 </ul>
                             </div>
                         </div>

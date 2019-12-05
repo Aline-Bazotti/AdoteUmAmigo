@@ -32,18 +32,6 @@
                 <!-- RD Navbar-->
                 <div class="rd-navbar-wrap">
                     <nav class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-stick-up-clone="true" data-md-stick-up-offset="190px" data-lg-stick-up-offset="190px">
-                        <div class="rd-navbar-top-panel">
-                            <div class="rd-navbar-top-panel-toggle" data-rd-navbar-toggle=".rd-navbar-top-panel"><span></span></div>
-                            <div class="rd-navbar-top-panel-content">
-                                <ul class="inline-list-xxs">
-                                    <li><a class="icon icon-xxs icon-circle icon-gray-outline icon-effect-1 fa fa-instagram" href="#"></a></li>
-                                    <li><a class="icon icon-xxs icon-circle icon-gray-outline icon-effect-1 fa fa-facebook" href="#"></a></li>
-                                    <li><a class="icon icon-xxs icon-circle icon-gray-outline icon-effect-1 fa fa-twitter" href="#"></a></li>
-                                    <li><a class="icon icon-xxs icon-circle icon-gray-outline icon-effect-1 fa fa-google-plus" href="#"></a></li>
-                                </ul>
-                                <div class="object-inline"><span class="icon icon-sm icon-gray material-icons-phone"></span><a class="link link-md link-white" href="callto:#">+1 (409) 987–5874</a></div>
-                            </div>
-                        </div>
                         <div class="rd-navbar-inner">
                             <!-- RD Navbar Panel-->
                             <div class="rd-navbar-panel">
@@ -56,9 +44,8 @@
                                 <ul class="rd-navbar-nav">
                                     <li><a href="<?= base_url() ?>">Home</a>
                                     </li>
-                                    <li class="active"><a href="about-us.html">Sobre nós</a>
-                                    </li>
-                                    <li><a href="adopt-a-pet.html">Adote um pet</a>
+                                    
+                                    <li><a href="">Adote um pet</a>
                                         <ul class="rd-navbar-dropdown tabs-nav">
                                             <li><a href="<?= base_url() ?>Animais/gatos">Gatos</a>
                                             </li>
@@ -66,11 +53,10 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="lost-&amp;-found.html">Achados &amp; Perdidos</a>
+                                    <li class="active"><a href="<?= base_url() ?>Donativos">Donativos</a>
                                     </li>
-                                    <li><a href="pet-services.html">Serviços</a>
-                                    </li>
-                                    <li><a href="news.html">Eventos</a></li>
+                                    <li><a href="<?= base_url() ?>Usuario/Cadastro">Cadastre-se</a></li>
+                                    <li><a href="<?= base_url() ?>Usuario/Login">Login</a></li>
                                 </ul>
                             </div>
                         </div>

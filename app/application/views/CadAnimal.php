@@ -32,7 +32,6 @@
                 <!-- RD Navbar-->
                 <div class="rd-navbar-wrap">
                     <nav class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-stick-up-clone="true" data-md-stick-up-offset="190px" data-lg-stick-up-offset="190px">
-                        
                         <div class="rd-navbar-inner">
                             <!-- RD Navbar Panel-->
                             <div class="rd-navbar-panel">
@@ -65,10 +64,10 @@
             </header>
             <!-- Breadcrumbs & Page title-->
             <div class="page-title" style="padding: 50px 15px;">
-                <div class="page-title-text">Login</div>
+                <div class="page-title-text">Cadastro Animal</div>
                 <ul class="breadcrumbs-custom">
                     <li><a href="index.html">Home</a></li>
-                    <li class="active">Login</li>
+                    <li class="active">Cadastro Animal</li>
                 </ul>
             </div>
 
@@ -76,24 +75,79 @@
             <section class="section-md last-section bg-white text-center" style="background-color: whitesmoke;">
                 <div class="shell">
                     <div class="range range-sm-center">
-                        <div class="cell-sm-10 cell-md-10 cell-lg-6">
+                        <div class="cell-sm-10 cell-md-10 cell-lg-8">
                             <!-- RD Mailform-->
-                            <form id="cadastro" class="" data-form-output="form-output-global" data-form-type="contact" method="post" action="<?= base_url() ?>Usuario/logar">
+                            <form id="cadastro" class="" data-form-output="form-output-global" data-form-type="contact" method="post" action="<?= base_url() ?>Animais/CadAnimal">
                                 <div class="range range-sm-bottom spacing-20 cadastro">
+                                    <div class="cell-sm-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="nome" type="text" name="nome" id="nome" data-constraints="@Required">
+                                            <label class="form-label" for="nome">Nome</label>
+                                        </div>
+                                    </div>
+                                    <div class="cell-sm-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="sexo" type="text" name="sexo" id="sexo" data-constraints="@Required">
+                                            <label class="form-label" for="sexo">Sexo (F, M)</label>
+                                        </div>
+                                    </div>
+                                    <div class="cell-sm-6">
+                                        <select class="form-control form-control-sm" name="especie" id="especie">
+                                            <option value="0">Selecione uma espécie..</option>
+                                        <?php foreach ($especies as $e) { ?>
+                                            <option value="<?= $e->id ?>"><?= $e->nome ?></option>
+                                        <?php } ?>
+                                        </select>
+                                    </div>
+                                    <div class="cell-sm-6">
+                                        <div class="carregando" style="display: none; padding: 12px;">Aguarde, carregando...</div>
+                                        <select class="form-control form-control-sm" name="raca" id="raca">
+                                            <?php
+                                            if (isset($racas)) {
+                                                echo '<option value="0"></option>';
+                                                foreach ($racas as $r) {
+                                                    echo '<option value="' . $r->id . '">' . $r->nome . '</option>';
+                                                }
+                                            } else {
+                                                echo '<option value="" selected>Selecione primeiro a espécie..</option>';
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
                                     <div class="cell-sm-12">
                                         <div class="form-group">
-                                            <input class="form-control" id="contact-email" type="email" name="email" id="email" data-constraints="@Email @Required">
-                                            <label class="form-label" for="contact-email">E-mail</label>
+                                            <textarea class="form-control" id="descricao" name="descricao" id="descricao" data-constraints="@Required"></textarea>
+                                            <label class="form-label" for="descricao">Descrição</label>
                                         </div>
                                     </div>
                                     <div class="cell-sm-12">
                                         <div class="form-group">
-                                            <input class="form-control" id="contact-senha" type="password" name="senha" id="senha" data-constraints="@Required">
-                                            <label class="form-label" for="contact-senha">Senha</label>
+                                            <textarea class="form-control" id="historico" name="historico" id="historico" data-constraints="@Required"></textarea>
+                                            <label class="form-label" for="historico">Histórico</label>
                                         </div>
                                     </div>
+                                    <div class="cell-xs-12">
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="1" id="castrado" name="castrado">
+                                          <label class="form-check-label" for="castrado">
+                                               &nbsp; CASTRADO
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="1" id="deficiencia" name="deficiencia">
+                                          <label class="form-check-label" for="deficiencia">
+                                               &nbsp; DEFICIÊNCIA
+                                          </label>
+                                        </div>                                     
+                                    </div>
+                                    <div class="cell-xs-12">
+                                      <div class="form-group">
+                                        <label for="id-input-file">Foto</label>
+                                        <input type="file" class="form-control-file" id="id-input-file" name="userfile">
+                                      </div>
+                                  </div>
                                     <div class="cell-sm-12">
-                                        <button class="btn btn-tan-hide btn-block" type="submit">Entrar</button>
+                                        <button class="btn btn-tan-hide btn-block" type="submit">Salvar</button>
                                     </div>
                                 </div>
                             </form>

@@ -56,18 +56,20 @@
                                 <ul class="rd-navbar-nav">
                                     <li class="active"><a href="index.html">Home</a>
                                     </li>
-                                    <li><a href="<?= base_url() ?>home/sobre">Sobre nós</a>
-                                    </li>
-                                    <li><a href="adopt-a-pet.html">Adote um pet</a>
+                                    <li><a href="">Adote um pet</a>
                                         <ul class="rd-navbar-dropdown tabs-nav">
                                             <li><a href="<?= base_url() ?>Animais/gatos">Gatos</a>
                                             </li>
                                             <li><a href="<?= base_url() ?>Animais/cachorros">Cachorros</a>
                                             </li>
+                                            <li><a href="<?= base_url() ?>Animais/Cadastrar">Cadastrar</a>
+                                            </li>
                                         </ul>
                                     </li>
+                                    <li><a href="<?= base_url() ?>Donativos">Donativos</a>
+                                    </li>
                                     <li><a href="<?= base_url() ?>Usuario/Cadastro">Cadastre-se</a></li>
-                                    <li><a href="pet-services.html">Login</a></li>
+                                    <li><a href="<?= base_url() ?>Usuario/Login">Login</a></li>
                                     
                                 </ul>
                             </div>
@@ -197,45 +199,39 @@
                     </article>
                 </div>
             </section>
-
-            <!-- About Us-->
-            <section class="section-decoration-wrap">
+            <section class="bg-primary oh">
                 <div class="shell">
-                    <div class="range range-sm-center">
-                        <div class="cell-md-6 cell-lg-5">
-                            <div class="section-decoration-image"><img src="<?= base_url() ?>assets/images/home1-5-922x657.jpg" alt="" width="922" height="657"/>
+                    <div class="range range-custom-bordered-small">
+                        <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-bordered">
+                            <div class="counter-box-bold">
+                                <div class="counter" data-from="0" data-to="9">9</div>
+                                <p class="counter-box-header">Anos ajudando os animais</p>
                             </div>
                         </div>
-                        <div class="cell-sm-9 cell-md-6 cell-lg-7">
-                            <div class="section-decoration-content">
-                                <div class="section-lg">
-                                    <h2>Sobre nós</h2>
-                                    <!-- Bootstrap tabs-->
-                                    <div class="tabs-custom tabs-horizontal tabs-line tabs-left" id="tabs-1">
-                                        <!-- Nav tabs-->
-                                        <ul class="nav nav-tabs">
-                                            <li class="active"><a href="#tabs-1-1" data-toggle="tab">Nossa missão</a></li>
-                                            <li><a href="#tabs-1-2" data-toggle="tab">Nosso objetivo</a></li>
-                                            <li><a href="#tabs-1-3" data-toggle="tab">Nossa visão</a></li>
-                                        </ul>
-                                        <!-- Tab panes-->
-                                        <div class="tab-content">
-                                            <div class="tab-pane fade in active" id="tabs-1-1">
-                                                <p>Every year hundreds of animals such as dogs or cats become homeless for many reasons. Our mission is to find the homeless animals around the country and give them a better life.</p>
-                                            </div>
-                                            <div class="tab-pane fade" id="tabs-1-2">
-                                                <p>Our goal is to make Animal Shelter the first place potential adopters turn to when looking to get a new pet, ensuring that all healthy and treatable pets find loving homes.</p>
-                                            </div>
-                                            <div class="tab-pane fade" id="tabs-1-3">
-                                                <p>We see the future of Animal Shelter as a compassionate society where companion animals are valued and treated with respect and are guaranteed to find loving homes and families.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-bordered">
+                            <div class="counter-box-bold">
+                                <div class="counter" data-from="0" data-to="865">865</div>
+                                <p class="counter-box-header">Animais adotados</p>
+                            </div>
+                        </div>
+                        <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-bordered">
+                            <div class="counter-box-bold">
+                                <div class="counter" data-from="0" data-to="26">26</div>
+                                <p class="counter-box-header">Voluntários</p>
+                            </div>
+                        </div>
+                        <div class="cell-xs-6 cell-sm-12 cell-md-3 height-fill">
+                            <div class="col-decoration-skew">
+                                <div class="col-decoration-skew-inner">
+                                    <h2>Não</h2>
+                                    <h5>Permaneça Indiferente</h5><a class="btn btn-trout-inverse btn-effect-anis btn-offset-medium" href="make-a-gift-online.html">Doe agora</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
+            <!-- About Us-->
 
             <!-- SUCCESS STORIES-->
             <section class="section-md bg-gray-light text-center">
@@ -332,155 +328,7 @@
                     </div>
                 </div>
             </section>
-
-            <section class="bg-primary oh">
-                <div class="shell">
-                    <div class="range range-custom-bordered-small">
-                        <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-bordered">
-                            <div class="counter-box-bold">
-                                <div class="counter" data-from="0" data-to="9">9</div>
-                                <p class="counter-box-header">Anos ajudando os animais</p>
-                            </div>
-                        </div>
-                        <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-bordered">
-                            <div class="counter-box-bold">
-                                <div class="counter" data-from="0" data-to="865">865</div>
-                                <p class="counter-box-header">Animais adotados</p>
-                            </div>
-                        </div>
-                        <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-bordered">
-                            <div class="counter-box-bold">
-                                <div class="counter" data-from="0" data-to="26">26</div>
-                                <p class="counter-box-header">Voluntários</p>
-                            </div>
-                        </div>
-                        <div class="cell-xs-6 cell-sm-12 cell-md-3 height-fill">
-                            <div class="col-decoration-skew">
-                                <div class="col-decoration-skew-inner">
-                                    <h2>Não</h2>
-                                    <h5>Permaneça Indiferente</h5><a class="btn btn-trout-inverse btn-effect-anis btn-offset-medium" href="make-a-gift-online.html">Doe agora</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- recent news-->
-            <section class="section-sm bg-white text-center">
-                <div class="shell">
-                    <h2>Notícias recentes</h2>
-                    <div class="range range-sm-center spacing-30">
-                        <div class="cell-sm-10 cell-md-6">
-                            <!-- Post boxed-->
-                            <article class="post-boxed">
-                                <div class="post-boxed-image-wrap"><img class="post-boxed-image" src="<?= base_url() ?>assets/images/home1-10-572x333.jpg" alt="" width="572" height="333"/>
-                                </div>
-                                <div class="post-boxed-body">
-                                    <p class="post-boxed-title"><a href="single-post.html">Top 4 Dog Breeds You Can Easily Take to Work</a></p>
-                                    <div class="post-boxed-text">
-                                        <p>A dog in the workplace provides many positive benefits. However, before you decide to bring your dog to work with you check your company policies...</p>
-                                    </div>
-                                    <div class="post-boxed-footer">
-                                        <ul class="post-meta">
-                                            <li><span class="icon icon-xs icon-tan-hide material-icons-access_time"></span>
-                                                <time datetime="2016-01-01">February 10, 2016</time>
-                                            </li>
-                                            <li><span class="icon icon-xs icon-tan-hide mdi mdi-thumb-up"></span><span>23</span></li>
-                                            <li><a href="single-post.html"><span class="icon icon-xs icon-tan-hide mdi mdi-comment-outline"></span><span>6</span></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="cell-sm-10 cell-md-6">
-                            <!-- Post boxed-->
-                            <article class="post-boxed post-boxed-xs-horizontal post-boxed-blue-marguerite">
-                                <div class="post-boxed-image-wrap"><img class="post-boxed-image" src="<?= base_url() ?>assets/images/home1-11-237x268.jpg" alt="" width="237" height="268"/>
-                                </div>
-                                <div class="post-boxed-body">
-                                    <p class="post-boxed-title"><a href="single-post.html">Wellness Care Plans for Your Pets</a></p>
-                                    <div class="post-boxed-text">
-                                        <p>Have you ever considered enrolling your pet in a wellness care plan? These plans are quickly gaining popularity, and with good reason...</p>
-                                    </div>
-                                    <div class="post-boxed-footer">
-                                        <ul class="post-meta">
-                                            <li><span class="icon icon-xs icon-tan-hide material-icons-access_time"></span>
-                                                <time datetime="2016-01-01">February 10, 2016</time>
-                                            </li>
-                                            <li><span class="icon icon-xs icon-tan-hide mdi mdi-thumb-up"></span><span>23</span></li>
-                                            <li><a href="single-post.html"><span class="icon icon-xs icon-tan-hide mdi mdi-comment-outline"></span><span>6</span></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- Post boxed-->
-                            <article class="post-boxed post-boxed-xs-horizontal post-boxed-tan-hide">
-                                <div class="post-boxed-image-wrap"><img class="post-boxed-image" src="<?= base_url() ?>assets/images/home1-12-237x268.jpg" alt="" width="237" height="268"/>
-                                </div>
-                                <div class="post-boxed-body">
-                                    <p class="post-boxed-title"><a href="single-post.html">Top 5 Most Affectionate Cats</a></p>
-                                    <div class="post-boxed-text">
-                                        <p>Contrary to popular belief, not all cats are the epitome of indifference. Some cat breeds are among the most affectionate and loving pets...</p>
-                                    </div>
-                                    <div class="post-boxed-footer">
-                                        <ul class="post-meta">
-                                            <li><span class="icon icon-xs icon-tan-hide material-icons-access_time"></span>
-                                                <time datetime="2016-01-01">February 10, 2016</time>
-                                            </li>
-                                            <li><span class="icon icon-xs icon-tan-hide mdi mdi-thumb-up"></span><span>23</span></li>
-                                            <li><a href="single-post.html"><span class="icon icon-xs icon-tan-hide mdi mdi-comment-outline"></span><span>6</span></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             
-            <section class="section-md last-section bg-white text-center" style="background-color: whitesmoke;">
-                <div class="shell">
-                    <div class="range range-sm-center">
-                        <div class="cell-sm-10 cell-md-10 cell-lg-6">
-                            <h4>CADASTRE-SE</h4>
-                            <!-- RD Mailform-->
-                            <form id="contato" class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="<?= base_url() ?>Contato/cadContato">
-                                <div class="range range-sm-bottom spacing-20">
-                                    <div class="cell-sm-6">
-                                        <div class="form-group">
-                                            <input class="form-control" id="contact-first-name" type="text" name="nome" id="nome" data-constraints="@Required">
-                                            <label class="form-label" for="contact-first-name">Nome completo</label>
-                                        </div>
-                                    </div>
-                                    <div class="cell-sm-6">
-                                        <div class="form-group">
-                                            <input class="form-control" id="contact-last-name" type="text" name="telefone" id="telefone" data-constraints="@Numeric">
-                                            <label class="form-label" for="contact-last-name">Telefone</label>
-                                        </div>
-                                    </div>
-                                    <div class="cell-xs-12">
-                                        <div class="form-group">
-                                            <textarea class="form-control" id="contact-message" name="msg" id="msg" data-constraints="@Required"></textarea>
-                                            <label class="form-label" for="contact-message">Mensagem</label>
-                                        </div>
-                                    </div>
-                                    <div class="cell-sm-6">
-                                        <div class="form-group">
-                                            <input class="form-control" id="contact-email" type="email" name="email" id="email" data-constraints="@Email @Required">
-                                            <label class="form-label" for="contact-email">E-mail</label>
-                                        </div>
-                                    </div>
-                                    <div class="cell-sm-6">
-                                        <button class="btn btn-tan-hide btn-block" type="submit">Enviar mensagem</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <!-- Page Footer-->
             <section class="pre-footer-default text-center text-sm-left">
                 <div class="shell">
